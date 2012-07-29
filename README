@@ -1,1 +1,7 @@
-Test of README file.
+Utility that will take a single MS Access .mdb, or all files in a directory, and output the .mdb's table contents in a variety of formats.
+
+When porting a legacy application from VB6 to C#, one piece of functionality that needed to be tested was that generated Microsoft Access .mdb files between the old/new code were the same.
+
+These files were used as the data source for generated Crystal reports.  Testing of the .mdb output was relegated to merely "staring-and-comparing" between the report from the old system and the report from the new system.
+
+This utility automates the generation of .txt or .xml files from generated .mdbs, allowing testers to compare the text files using their favorite diff tool.
