@@ -258,7 +258,7 @@ namespace MdbToTextConverter
 					filePaths = fileInfos.Where(x => x.Extension.ToLower() == ProcessingStrings.MdbExtension).Select(x => x.FullName).ToList();
 					break;
 				case ConversionMode.File:
-					filePaths.Add(this.MdbPath);
+          filePaths = new List<string> { this.MdbPath };
 					break;
 			}
 
